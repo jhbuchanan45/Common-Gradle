@@ -23,10 +23,6 @@ def registerDefaultMavenPublication = !project.hasProperty("registerDefaultMaven
 		project.registerDefaultMavenPublication
 
 buildscript {
-	plugins {
-    	id "org.cadixdev.licenser" version "0.6.1"
-	}
-
 	repositories {
 		jcenter()
 
