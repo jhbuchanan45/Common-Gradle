@@ -31,7 +31,7 @@ repositories {
 	
 	if (project.hasProperty("modMenuVersion") {
 		maven {
-			url = "https://raw.githubusercontent.com/TerraformersMC/Archive/main/releases/"
+			url "https://raw.githubusercontent.com/TerraformersMC/Archive/main/releases/"
 		}
 	}
 
@@ -52,7 +52,7 @@ dependencies {
 	}
 
 	if (project.hasProperty("modMenuVersion")) {
-		modImplementation "com.terraformersmc:modmenu:2.0.2"
+		modImplementation "com.terraformersmc:modmenu:${project.modMenuVersion}"
 	}
 
 	if (project.hasProperty("clothConfigVersion")) {
