@@ -29,7 +29,7 @@ repositories {
 		 }
 	}
 	
-	if (project.hasProperty("modMenuVersion") {
+	if (project.hasProperty("modMenuVersion")) {
 		maven {
 			url "https://raw.githubusercontent.com/TerraformersMC/Archive/main/releases/"
 		}
