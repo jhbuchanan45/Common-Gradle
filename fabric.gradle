@@ -28,6 +28,12 @@ repositories {
 		 	url "https://maven.shedaniel.me/" 
 		 }
 	}
+	
+	if (project.hasProperty("modMenuVersion") {
+		maven {
+			url = "https://raw.githubusercontent.com/TerraformersMC/Archive/main/releases/"
+		}
+	}
 
 	if (project.hasProperty("autoConfigTOMLVersion")) {
 		maven {
@@ -46,7 +52,7 @@ dependencies {
 	}
 
 	if (project.hasProperty("modMenuVersion")) {
-		modImplementation "io.github.prospector:modmenu:${project.modMenuVersion}"
+		modImplementation "com.terraformersmc:modmenu:2.0.2"
 	}
 
 	if (project.hasProperty("clothConfigVersion")) {
